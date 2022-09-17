@@ -1,0 +1,80 @@
+.myform{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.frame{
+
+    position: relative;
+    display: block;
+    
+ 
+    background-image: url(./trava.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 90vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    border: 6px solid violet;
+}
+
+.score {
+    display: block;
+    position: absolute;
+    
+    width: calc(100vw/100*20);
+    height: calc(100vh/100*10);
+    right: calc(100vw/100*5);
+    top: calc(100vh/100*5);;
+
+    border: 6px solid violet;
+    border-radius: 4px;
+    color: violet;
+    background-color: rgba(100, 100, 100, 0.7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: calc(100vw/100*4);
+}
+
+.score::after{
+
+    display: block;
+    width: 100%;
+    content: "START/STOP";
+    position: absolute;
+    top: 100px;
+    cursor: pointer;
+    color: red;
+    text-shadow: 2px 2px 2px white;
+}
+
+.dog{
+
+    position: absolute;
+    width: calc(100vw/100*20);
+    overflow: hidden;
+    /* top: 10px;
+    left: 10px; */
+
+    cursor: pointer;
+}
+
+.dog:focus {
+    background-color: tomato;
+}
+
+.dog_img {
+    width: 100%;
+}
