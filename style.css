@@ -87,6 +87,26 @@
     text-shadow: 2px 2px 2px white;
 }
 
+.level{
+   
+    display: flex;
+    position: absolute;
+    width: calc(100vw/100*8);
+    height: calc(100vh/100*5);
+    align-items: center;
+    justify-content: center;
+  
+    margin-top: 490px;
+
+    border: 3px solid violet;
+    border-radius: 4px;
+    color: violet;
+    background-color: rgba(100, 100, 100, 0.7);
+
+    font-size: calc(100vw/100*2);
+
+}
+
 .data-down{
     margin-top: 600px;
 
@@ -130,9 +150,9 @@
     cursor: pointer;
 }
 
-.dog:focus, .dog:hover {
+/* .dog:focus, .dog:hover {
     background-color: tomato;
-}
+} */
 
 .dog_img {
     width: 100%;

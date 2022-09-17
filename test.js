@@ -6,6 +6,7 @@ start = document.getElementById("data-start");
 stopt = document.getElementById("data-stop");
 up = document.getElementById("data-up");
 down = document.getElementById("data-down");
+level = document.getElementById("level")
 
 const frameSizeW  = getComputedStyle(frame).width;
 const frameSizeH  = getComputedStyle(frame).height;
@@ -18,6 +19,7 @@ let dogLeft;
 let intervalname;
 let scoreInt = 0;
 let interval = 1000;
+let moveDoing = false;
 
 function dogPosition() {
    dogTop =  Math.round ( Math.random() * (parseInt(frameSizeH) - 10) + 10 - parseInt(dogSizeH));
@@ -27,6 +29,18 @@ function dogPosition() {
    dog.style.top = dogTop + "px";
 }
 
+function intervalDog (timeinterval, intervaldo, action) {
+    if (!moveDoing){
+    action? intervalname = setInterval (intervaldo, timeinterval): clearInterval(intervalname);
+    } else {
+    clearInterval(intervalname);   
+    }
+    moveDoing=true;
+}
+
+function levelchange(levelnum){
+    level.innerHTML = levelnum;
+}
 // ----------------events---------------
 
 start.addEventListener("click", startdog);
@@ -38,32 +52,25 @@ down.addEventListener("click", downinterval);
 
 function startdog (){
     intervalDog (interval, dogPosition, true);
+    console.log(interval);
 }
 
 function stopdog (){
-    intervalDog (interval, dogPosition, false);
+    moveDoing=false;
+    clearInterval(intervalname);
 }
 
 function upinterval(){
     interval -= 20;
-    intervalDog (interval, dogPosition, true);
+    levelchange(interval);
 }
 
 function downinterval() {
     interval += 20;
-    intervalDog (interval, dogPosition, true);
+    levelchange(interval);
 }
 
-function intervalDog (timeinterval, intervaldo, action) {
-    //let intervalname;
-    // clearInterval(intervalname);
-    if (action){
-        intervalname = setInterval (intervaldo, timeinterval);
-    } else {
-        clearInterval(intervalname);
-    }
-}
-
+console.log(interval);
 
 function heatdog(){
     scoreInt += 1;
