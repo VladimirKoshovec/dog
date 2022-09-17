@@ -41,8 +41,8 @@ function stopdog(){
 
 function heatdog(){
     scoreInt += 1;
-    frame.innerHtml = scoreInt;
-    //console.log(scoreInt);
+    score.innerHTML = scoreInt;
+    console.log(scoreInt);
 }
 
 
