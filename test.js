@@ -20,7 +20,7 @@ dog.style.left = dogLeft + "px";
 dog.style.top = dogTop + "px";
 }
 
-//setInterval (dogPosition, 500);
+setInterval (dogPosition, 500);
 
 
 
