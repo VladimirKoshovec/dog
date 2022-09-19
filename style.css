@@ -42,45 +42,85 @@
 
 .data-start{
 
-    position: absolute;
     display: block;
 
     background-color: transparent;
-    border-color:;
+    background-image: url(./start-png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-color:transparent;
     border: none;
-  
 
     cursor: pointer;
     color: red;
     text-shadow: 2px 2px 2px white;
+}
+
+.data-disabled {
+   pointer-events: none;
+   opacity: 0.5;
 }
 
 .data-stop{
 
-    position: absolute;
     display: block;
 
     background-color: transparent;
-    border-color:;
+    background-image: url(./stop-png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-color:transparent;
     border: none;
 
-    margin-top: 200px;
+    margin-top: 20px;
 
     cursor: pointer;
     color: red;
     text-shadow: 2px 2px 2px white;
 }
 
-.data-up, .data-down{
+.data-up {
 
-    position: absolute;
     display: block;
 
     background-color: transparent;
-    border-color:;
+    background-image: url(./up-png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-color:transparent;
     border: none;
 
-    margin-top: 400px;
+    margin-top: 20px;
+
+    cursor: pointer;
+    color: red;
+    text-shadow: 2px 2px 2px white;
+}
+
+.data-down{
+
+    display: block;
+
+    background-color: transparent;
+    background-image: url(./down-png.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    border-color:transparent;
+    border: none;
+
+    margin-top: 20px;
 
     cursor: pointer;
     color: red;
@@ -90,32 +130,20 @@
 .level{
    
     display: flex;
-    position: absolute;
     width: calc(100vw/100*8);
-    height: calc(100vh/100*5);
+    height: calc(100vh/100*6);
     align-items: center;
     justify-content: center;
   
-    margin-top: 490px;
+    margin-top: 20px;
 
     border: 3px solid violet;
     border-radius: 4px;
     color: violet;
     background-color: rgba(100, 100, 100, 0.7);
 
-    font-size: calc(100vw/100*2);
+    font-size: calc(100vw/100*3);
 
-}
-
-.data-down{
-    margin-top: 600px;
-
-}
-
-.data-errow-png {
-
-    width: calc(100vh/100*11);
-    height: calc(100vh/100*9);
 }
 
 .buttons {
@@ -129,17 +157,6 @@
 
     right: calc(100vw/100*10);
     top: calc(100vh/100*25);
-}
-
-.data-start-png{
-    width: calc(100vh/100*15);
-    height: calc(100vh/100*10);
-}
-
-.data-stop-png {
-
-    width: calc(100vh/100*10);
-    height: calc(100vh/100*10);
 }
 
 .dog{
