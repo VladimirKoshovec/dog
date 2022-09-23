@@ -73,12 +73,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-color:transparent;
     border: none;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
     cursor: pointer;
     color: red;
@@ -94,12 +94,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-color:transparent;
     border: none;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
     cursor: pointer;
     color: red;
@@ -115,12 +115,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-color:transparent;
     border: none;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
     cursor: pointer;
     color: red;
@@ -135,7 +135,7 @@
     align-items: center;
     justify-content: center;
   
-    margin-top: 20px;
+    margin-top: 15px;
 
     border: 3px solid violet;
     border-radius: 4px;
@@ -155,16 +155,30 @@
     flex-direction: column;
     align-items: center;
 
-    right: calc(100vw/100*10);
-    top: calc(100vh/100*25);
+    right: calc(100vw/100*8);
+    top: calc(100vh/100*20);
 }
 
 .dog{
-
+    display: block;
     position: absolute;
-    width: calc(100vw/100*20);
-    overflow: hidden;
+    width: calc(100vw/100*17);
+    height: calc(100vw/100*30);
+    /* overflow: hidden; */
     cursor: pointer;
+    background-image: url(./york.png);
+    background-size: cover;
+}
+
+.dog2{
+    display: block;
+    position: absolute;
+    width: calc(100vw/100*25);
+    height: calc(100vw/100*20);
+    /* overflow: hidden; */
+    cursor: pointer;
+    background-image: url(./miki.png);
+    background-size: cover;
 }
 
 /* .dog:focus, .dog:hover {
@@ -183,4 +197,27 @@
     font-size: calc(100vw/100*4);
     color: white;
     text-shadow: 2px 2px 2px whitesmoke;
+}
+
+.dogtype {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid white;
+    margin-top: 15px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: rgba(100, 100, 100, 0.7);
+}
+.dogtype::after{
+    content: "";
+    display: block;
+    background-image: url(./reverse.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
 }
