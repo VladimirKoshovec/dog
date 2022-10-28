@@ -29,8 +29,17 @@ let dogTop;
 let dogLeft;
 let intervalname;
 let scoreInt = 0;
-//let interval = 1000;
 let moveDoing = false;
+
+// bonsu system object
+bonus = {
+    type: ["ForBusya", "ForMiki"],
+    classUsed: ["BusyaBonus1","BusyaBonus2","MikiBonus1","MikiBonus2"],
+    useBonus (){
+      
+    }
+}
+// bonsu system object
 
 function dogtypef (dogname){
     let usedog = "";
